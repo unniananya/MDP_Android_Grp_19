@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="12dp">
+
+    <!-- Created 4 buttons for fragment_map.xml (start) -->
+
+    <!-- End -->
+
+    <Switch
+        android:id="@+id/manualAutoToggleBtn"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="16dp"
+        android:paddingRight="150dp"
+
+        android:switchPadding="-220dp"
+        android:text="MANUAL"
+        android:textAlignment="center"
+        android:textOff="@string/manual"
+        android:textOn="@string/auto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <ImageButton
+        android:id="@+id/exploredImageBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:srcCompat="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Obstacle Direction: "
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obstacleImageBtn" />
+
+    <ImageButton
+        android:id="@+id/obstacleFaceTopBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exploredImageBtn"
+        app:srcCompat="@drawable/ic_forward"
+        app:tint="@color/colorBlack" />
+
+    <ImageButton
+        android:id="@+id/clearImageBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/directionChangeImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:srcCompat="@drawable/ic_clear" />
+
+    <ImageButton
+        android:id="@+id/obstacleImageBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/exploredImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <ImageButton
+        android:id="@+id/obstacleFaceLeftBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/obstacleFaceBtmBtn"
+        app:layout_constraintTop_toBottomOf="@+id/directionChangeImageBtn"
+        app:srcCompat="@drawable/ic_left"
+        app:tint="@color/colorBlack" />
+
+    <ImageButton
+        android:id="@+id/obstacleFaceRightBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/obstacleFaceLeftBtn"
+        app:layout_constraintTop_toBottomOf="@+id/clearImageBtn"
+        app:srcCompat="@drawable/ic_right"
+        app:tint="@color/colorBlack" />
+
+    <ImageButton
+        android:id="@+id/directionChangeImageBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/obstacleImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:srcCompat="@drawable/ic_refresh"
+        app:tint="@color/colorBlack" />
+
+    <ImageButton
+        android:id="@+id/obstacleFaceBtmBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/obstacleFaceTopBtn"
+        app:layout_constraintTop_toBottomOf="@+id/obstacleImageBtn"
+        app:srcCompat="@drawable/ic_reverse"
+        app:tint="@color/colorBlack" />
+
+    <ToggleButton
+        android:id="@+id/setStartPointToggleBtn"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textOff="set start"
+        android:textOn="CANCEL"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/setWaypointToggleBtn"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/positivebtn"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textOff="SET WAYPOINT"
+        android:textOn="CANCEL"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setStartPointToggleBtn"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <Button
+        android:id="@+id/resetMapBtn"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/pastel_red"
+        android:text="Clear Map"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/blue_200"
+        android:clickable="true"
+        android:text="UPDATE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
