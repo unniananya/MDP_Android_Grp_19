@@ -36,7 +36,7 @@
                     android:cropToPadding="false"
                     android:drawableLeft="@drawable/ic_back"
                     android:textColor="@color/white" />
-<!--                    android:background="@color/button_orange"-->
+                <!--                    android:background="@color/button_orange"-->
 
                 <Switch
                     android:id="@+id/bluetoothSwitch"
@@ -112,7 +112,7 @@
                         android:id="@+id/otherDevicesTitleTextView"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:background="@color/blue_200"
+                        android:background="@color/green_dark"
                         android:gravity="center"
                         android:listSelector="#bdb9b9"
                         android:text="Available Devices"
@@ -155,7 +155,7 @@
                         android:id="@+id/pairedDevicesTitleTextView"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:background="@color/blue_200"
+                        android:background="@color/green_dark"
                         android:gravity="center"
                         android:listSelector="#bdb9b9"
                         android:text="Paired Devices"
@@ -180,7 +180,7 @@
                     android:id="@+id/refreshBtn"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@color/blue_200"
+                    android:background="@color/green_dark"
                     android:drawableLeft="@drawable/ic_refresh"
                     android:gravity="right"
                     android:layout_marginLeft="360dp"
@@ -206,7 +206,7 @@
                     android:layout_marginTop="50dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="0.4"
-                    android:background="@color/blue_A100"
+                    android:background="@drawable/blueroundedbutton"
                     android:gravity="center"
                     android:text="CONNECT"
                     android:textColor="@color/colorWhite"
@@ -218,8 +218,8 @@
                     android:layout_width="239dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
-                    android:background="@color/pastel_red"
                     android:gravity="center"
+                    android:background="@drawable/redroundedbutton"
                     android:text="DISCONNECT"
                     android:textColor="@color/colorWhite"
                     android:textSize="15dp"

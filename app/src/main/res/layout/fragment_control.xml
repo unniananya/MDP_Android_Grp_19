@@ -22,27 +22,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fastestToggleBtn" />
 
-<!--    <Button-->
-<!--        android:id="@+id/straightenWheel"-->
-<!--        android:layout_width="141dp"-->
-<!--        android:layout_height="52dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:text="Straighten Wheel"-->
-<!--        android:textSize="13sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/straightenWheel"-->
+    <!--        android:layout_width="141dp"-->
+    <!--        android:layout_height="52dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="Straighten Wheel"-->
+    <!--        android:textSize="13sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--    <Button-->
-<!--        android:id="@+id/stopRobot"-->
-<!--        android:layout_width="141dp"-->
-<!--        android:layout_height="52dp"-->
-<!--        android:layout_marginStart="416dp"-->
-<!--        android:layout_marginTop="24dp"-->
-<!--        android:text="Stop Robot"-->
-<!--        android:textSize="13sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/stopRobot"-->
+    <!--        android:layout_width="141dp"-->
+    <!--        android:layout_height="52dp"-->
+    <!--        android:layout_marginStart="416dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:text="Stop Robot"-->
+    <!--        android:textSize="13sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Button
         android:id="@+id/task1"
@@ -56,15 +56,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-            android:id="@+id/task2"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="370dp"
-            android:layout_marginTop="20dp"
-            android:text="Task 2: Fastest Car"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/task2"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="20dp"
+        android:text="Task 2: Fastest Car"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/forwardImageBtn"
@@ -76,7 +76,7 @@
         android:scaleY="3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_forward" />
+        app:srcCompat="@drawable/up_1" />
 
     <ImageButton
         android:id="@+id/leftforwardImageBtn"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toStartOf="@+id/forwardImageBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_left" />
+        app:srcCompat="@drawable/left_forward" />
 
     <ImageButton
         android:id="@+id/leftbackwardImageBtn"
@@ -101,7 +101,7 @@
         android:scaleY="3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/leftforwardImageBtn"
-        app:srcCompat="@drawable/ic_left" />
+        app:srcCompat="@drawable/left_backward" />
 
     <ImageButton
         android:id="@+id/backImageBtn"
@@ -116,7 +116,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forwardImageBtn"
         app:layout_constraintVertical_bias="0.013"
-        app:srcCompat="@drawable/ic_reverse" />
+        app:srcCompat="@drawable/down" />
 
     <ImageButton
         android:id="@+id/rightforwardImageBtn"
@@ -127,7 +127,7 @@
         android:scaleY="3"
         app:layout_constraintBottom_toBottomOf="@+id/forwardImageBtn"
         app:layout_constraintStart_toEndOf="@+id/forwardImageBtn"
-        app:srcCompat="@drawable/ic_right" />
+        app:srcCompat="@drawable/right_forward" />
 
 
     <ImageButton
@@ -140,7 +140,7 @@
         android:scaleY="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rightforwardImageBtn"
-        app:srcCompat="@drawable/ic_right" />
+        app:srcCompat="@drawable/right_backward" />
 
     <Switch
         android:id="@+id/phoneTiltSwitch"

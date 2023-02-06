@@ -40,7 +40,7 @@
         android:id="@+id/messageReceivedTitleTextView"
         android:layout_width="fill_parent"
         android:layout_height="46dp"
-        android:background="@color/blue_200"
+        android:background="@color/green_dark"
         android:gravity="center"
         android:text="Receiving From Bluetooth"
         android:textAlignment="center"
@@ -60,7 +60,7 @@
         android:layout_marginEnd="4dp"
         android:foreground="@drawable/ic_send"
         android:foregroundGravity="center"
-        app:backgroundTint="#90CAF9"
+        app:backgroundTint="@color/green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageReceivedTextView"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
